@@ -1,0 +1,69 @@
+doctype
+html(lang='ja')
+  // head
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title KANA TAKAHASHI
+    link(rel="stylesheet", href="/css/style.css")
+
+
+    //- OGP画像test
+    <meta property="og:title" content="KANA TAKAHASHI Portfolio">
+    <meta property="og:description" content="髙橋果奈のポートフォリオサイトです。">
+    <meta property=”og:type” content=”website” />
+    <meta property="og:url" content="https://www.kana-takahashi.com/">
+    <meta property="og:image" content="https://www.kana-takahashi.com/img/OGP-img.png">
+    <meta property="og:site_name" content="KANA TAKAHASHI">
+    
+    <link rel="shortcut icon" href="./img/favicon(1).ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="./img/favicon(1).ico" type="image/vnd.microsoft.icon">
+
+    //- swipe,css
+    //- link(rel="stylesheet",href="dist/css/swiper.css")
+    script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+    link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+
+  body
+    //- --------------------------
+    //-PC nav
+    //--------------------------
+    nav.header-nav-pc
+      ul
+        li
+          a(href="/#works") WORKS
+          //- a(href="/works/") WORKS
+        li
+          a(href="/#about") ABOUT
+          //- a(href="/about/") ABOUT
+        li
+          a(href="/#contact") CONTACT
+    //- --------------------------
+    //-
+    //---------------------------
+
+
+    //- --------------------------
+    //-TAB,SP nav
+    //---------------------------
+    #navArea
+      nav.header-nav
+        ul
+          li
+            a(href="/#works") WORKS
+          li
+            a(href="/#about") ABOUT
+          li
+            a(href="/#contact") CONTACT
+      //- バーガーメニュー三本線部分
+      .toggle_btn
+        span
+        span 
+        span
+
+      //- マスク
+      #mask
+
+    //- custom-cursor
+    .cursor
+    .follower

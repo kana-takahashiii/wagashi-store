@@ -1,0 +1,178 @@
+// Fruits Gelateria
+.works {
+    padding-top: 80px;
+    .mock-wrap {
+        aspect-ratio: 3/2;
+        display: grid;
+        grid-gap: 40px;
+        width: clamp( 300px, 70vw, 1000px);
+        // width: calc( 100% - 100px );
+        margin: 0 auto;
+        margin-top: 80px;
+        object-fit: cover;
+        position: relative;
+        // test
+        padding-bottom: 80px;
+
+        .mock {
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 40px;
+            p {
+                color: var(--main-color);
+                flex: 3;
+            }
+            p:first-of-type {
+                flex: 1;
+                font-size: clamp( 1.6rem, 2vw, 2rem);
+            }
+            p:nth-of-type(2) {
+                font-family: 'Noto Sans JP', serif ,sans-serif;
+            }
+        }   
+        // URL部分
+        .link {
+            // padding-bottom: 80px;
+            p:first-of-type {
+                color: var(--main-color);
+                font-size: clamp( 1.6rem, 2vw, 2rem);
+            }
+            a {
+                color: var(--main-color);
+                flex: 3;
+                text-decoration: none;
+                font-family: 'Noto Sans JP', serif ,sans-serif;
+                &:hover {
+                    text-decoration: underline;
+                }
+                    
+            }
+        }
+        // background-color
+        .bg-br-mock {
+            z-index: -1;
+            background-color: var(--box-color);
+            position: absolute;
+            width: 100vw;
+            top: calc((80vw - 100px) / 3);
+            height: calc(100% - ((80vw - 100px) / 3));
+            left: 50%;
+            transform: translateX(-50%);
+        } 
+    }
+
+    .mock-img-wrap {
+        align-items: center;
+        display: flex;
+        padding: 200px 0;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: clamp(300px,70vw,1000px);
+        .size {
+            width: 20%;
+        }
+        img {
+            width: 30%;
+        }
+    }
+
+    // btn
+    .btn {
+        @include btn(26.5rem, 7.2rem);
+        margin: 0  auto;
+
+        a {
+            align-items: center;
+            flex-direction: row-reverse;
+            display: flex;
+        }
+        .btn-text {
+            padding: 0 60px;
+        }
+        svg {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+        }
+    }
+//-----------
+// PC-end
+// ----------
+
+}
+
+
+
+
+//-----------
+// TAB
+// ----------
+@include mq(tab) {
+    // .about-wrap
+    .works {
+        h3 {
+            padding-top: 120px;
+        }    
+        .mock-wrap {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            .job {
+                margin-top: 40px;
+            }
+        }
+        .mock-img-wrap {
+            padding: 100px 0 200px;
+        }
+    }
+}
+//-----------
+// TAB-end
+// ----------
+
+
+
+
+
+//-----------
+// SP
+// ----------
+@include mq(sp) {
+    .works {
+        h3 {
+            padding-top: 120px;
+            // bg60px+余白40px
+        }
+    
+        .mock-wrap {
+            margin-top: 40px;
+            padding-bottom: 40px;
+            .mock {
+                margin-top:0;
+                p,a {
+                    flex: 1;
+                }
+            }
+        }
+        .mock-img-wrap {
+            padding: 100px 0;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 40px;
+            width: clamp(300px,70vw,1000px);
+            margin: 0 auto;
+                .size  {
+                    width: 100%;
+                    aspect-ratio: 3 / 2;
+                    object-fit: contain;
+                }
+                img {
+                    width: 50%;
+                }
+        }
+    }
+}
+//-----------
+// SP-end
+// ----------
+

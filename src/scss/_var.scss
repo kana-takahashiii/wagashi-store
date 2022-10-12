@@ -1,0 +1,32 @@
+// 変数ー例
+:root {
+    --font-family: 'Fraunces', 'Noto Sans JP', serif ,sans-serif;
+    --font-13-16: clamp(1.2rem, 2vw, 1.6rem);
+    --font-color: #653430;
+    // 各セクションタイトル
+    --h2: clamp(6rem, 16vw, 16rem);
+    --TAB-SP-h2: clamp(5rem, 16vw, 10rem);
+    // ABOUT-WORKSレスポンシブタイトル
+    // --TAB-SP-h2:clamp(6rem,14vw,10rem);
+    --main-color: #E5E5E5;
+    --box-color:#653430;
+    --btn-color:  #E27C39;
+    --shutter-burger-color: #1e1e1e;
+    // PC width
+    --width: 80vw;
+    // SP width
+    --media-sp-width: 90vw;
+}
+
+
+
+
+
+// animetion #circle
+@keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    100%  {transform: rotate(360deg);}
+}
+
+
+

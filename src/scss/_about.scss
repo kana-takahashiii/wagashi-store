@@ -1,0 +1,202 @@
+.about {
+    padding-top: 80px;
+    .about-wrap {
+        align-items: center;
+        display: flex;
+        gap: 10vw;
+        position: relative;
+        margin-bottom: 360px;
+
+        .about-text {
+            flex:1;
+            margin-top: 154px;
+            .text {
+                color: var(--main-color);
+                display: grid;
+                row-gap: 100px;
+                p:nth-child(1){
+                    font-family : 'Noto Sans JP';
+                }
+            }
+        }
+        // circle
+        .cr-about {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            flex: 1;
+                #circle {
+                    animation: rotate-anime 15s linear infinite;
+                }
+                .cr-text {
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                }
+                .about-p-wrap {
+                    width: calc( 100% - 140px );       
+                    h4 {
+                    margin-bottom: 8px;
+                    font-weight: bold;
+                    }
+                    h4,p {
+                        color: var(--main-color);
+                    }
+                }
+            }
+    }
+    .bg-br-about {
+        position: absolute;
+        background-color: var(--box-color);
+        height: 120%;
+        top: 0;
+        z-index: -1;
+        width: 100vw;
+        margin-left: -10vw;
+        transform: skew(0deg, -10deg);
+    }
+
+    .parapara-jump {
+        // position: relative;
+        position: absolute;
+        // bottom: -13vw;
+        top: calc(100% + 14vw);
+        width: 80px;
+        height: 160px;
+        background: url(../img/parapara-jp.png) no-repeat;
+        background-size: cover;
+        animation: parapara-about 3.0s steps(2) infinite;
+    }
+}
+// .about code-end
+
+    .footer-inner {
+        width: var(--width);
+        margin: 0 auto;
+        .btn {
+            @include btn(26.5rem, 7.2rem);
+            margin: 0 auto;
+            a {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+            .btn-text {
+                padding: 0 60px;
+            }
+            svg {
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+            }
+    }
+}
+
+
+
+
+
+
+
+//-----------
+//   TAB
+// ----------
+@include mq(tab) {
+    .about {
+        h2 {
+            font-size: var(--TAB-SP-h2);
+            text-align: center;
+        }
+        .about-wrap {
+            display: flex;
+            flex-direction: column;
+            margin: 80px 0 0;
+            .about-text {
+                margin-top: 80px;
+                    .text {
+                        row-gap: 40px;
+                    }  
+            }
+            .cr-about {
+                .cr-text svg {
+                    flex: 1;
+                }
+                .about-p-wrap {
+                    width: auto;
+                    flex: 3;
+                }
+                .cr-text:last-of-type {
+                    // margin-bottom: 100px;
+                    margin-bottom: 80px;
+                        .about-p-wrap {
+                            width: calc(100% - 194px);
+                        }
+                }
+            }
+            .bg-br-about {
+                transform: none;
+                height: 100%;
+                margin-left: 0;
+            }
+            .parapara {
+                // bottom: 0;
+                top: 90%;
+                left: -10vw;
+            }
+        }
+    }
+    .footer-inner {
+        padding-top: 200px;
+    }
+//TAB-code-end
+}
+
+
+
+
+//-----------
+//    SP
+// ----------
+@include mq(sp) {
+    body {
+        .about {
+            padding-top: 120px;
+            .about-wrap {
+                display: flex;
+                flex-direction: column;
+                top: 10vw;
+                grid-gap: 40px;
+                margin: 40px 0 100px;
+                .about-text {
+                    margin-top: 40px;
+                    .text {
+                        row-gap: 40px;  
+                    }
+                }
+                .cr-about {
+                    margin: 80px 0 40px 0;
+                    gap: 40px;
+                    .cr-text {
+                        gap: 40px;
+                    }
+                }
+            }
+            .bg-br-about {
+                transform: none;
+                height: 100%;
+                margin-left: 0;
+            }
+
+        }
+    
+    // btn
+    .footer-inner {
+        width: var(--media-sp-width);
+        padding-top: 0;
+    }
+}
+
+//SP-code-end
+}
+
+
+

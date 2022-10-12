@@ -1,0 +1,50 @@
+// top page kv anime-----PC版
+@keyframes parapara-top {
+    to {
+        background-position: -160px 0 ; 
+    }
+}
+
+
+// top page kv anime-----SP版
+@keyframes parapara-top-sp {
+    0% {
+        background-position: 0 0; 
+    }
+
+    100% {
+        // background-position: -(80px) 0 ; 
+        background-position: 200% 0 ; 
+    }
+}
+
+
+
+// aboutpage anime
+@keyframes parapara-about {
+    to {
+        background-position: -(160px) 0 ; 
+    }
+    
+}
+
+// contact anime
+@keyframes parapara-jmp {
+    to {
+        background-position: -(274px) 0 ; 
+    }
+}
+
+
+
+
+
+
+// contact anime-----SP版
+@include mq(sp) {
+    @keyframes parapara-jmp {
+        to {
+            background-position: -(137px) 0 ; 
+        }
+    }
+}

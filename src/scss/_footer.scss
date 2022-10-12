@@ -1,0 +1,27 @@
+footer {
+    position: relative;
+    p {
+        font-family: 'Noto Sans JP', sans-serif;
+        text-align: center;
+    }
+    padding: 200px 0 40px;
+
+}
+
+
+// 
+@include mq(tab) {
+    footer {
+        padding: 100px 0 40px;
+    }
+
+}
+
+
+@include mq(sp) {
+        // footer {
+        //     padding: 100px 0 40px;
+        // }
+
+}
+

@@ -1,0 +1,117 @@
+// base -リセットcss等
+@import "~normalize.css";
+@import "~html5-reset";
+
+// fontの読み込み
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+// scss読み込み
+//  変数のシート
+@import '_var.scss';
+// mixin
+@import '_mixin.scss';
+
+// animation
+@import '_animation.scss';
+
+
+//swiper シート
+// @import 'swiper/swiper-bundle.css';
+
+//  各プロジェクト-scss
+@import '_header.scss';
+@import '_top.scss';
+@import '_about.scss';
+@import '_works.scss';
+@import '_footer.scss';
+
+
+
+
+
+
+// base
+html {
+    font-size: 62.5%;
+    // scroll-behavior: smooth;
+}
+body {
+    font-size: var(--font-13-16);
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background: var(--main-color);
+    line-height: 1.5;
+    letter-spacing: .05em;
+    margin: 0 auto;
+
+    body{
+        font-size: var(--font-13-16);
+        font-family: var(--font-family);
+        color: var(--font-color);
+    }
+    .top {
+        padding-top: 0;
+        width: var(--width);
+        margin: 0 auto;
+    }
+
+    #works,#about,#contact{
+        padding-top: 200px;
+        margin: 0 auto;
+    } 
+
+    .about {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    h2{
+        font-size: var(--h2);
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    h3 {
+        //--h3___WORKS-site-title GM
+        width: 80vw;
+        margin:  0 auto;
+        font-size: clamp( 4rem, 7vw, 10rem);
+        font-weight: 700;
+        line-height: 1;
+        // padding-bottom: 160px;
+    }
+    .section-item {
+        margin-top: 80px;
+    }
+    span {
+        font-weight: inherit;
+    }
+}
+
+
+// TOP>>js-trigger共通
+#works,#about,#contact{
+    opacity: 0;
+    transition: opacity 0.5s linear;
+        &.is-active {
+            opacity: 1;
+        }
+}
+
+
+
+// -----SP-----
+@include mq(sp) {
+    body {
+        .top {
+            width: var(--media-sp-width);
+            #works,#about,#contact{
+                padding-top: 100px;
+            }    
+        }
+        .about {
+            width: var(--media-sp-width) ;
+        }
+    }
+}
+// code-end
