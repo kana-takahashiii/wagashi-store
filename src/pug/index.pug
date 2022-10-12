@@ -3,38 +3,41 @@ include components/_header.pug
 
 main
     //お知らせ
-    section.p1-wrap
+    .section-wrap#news
         h2.section-t お知らせ
-            dl
-                dt 2021.01.01
-                dd 正月限定刻印どらやき
+            .news-wrap
+                dl
+                    dt 2021.01.01
+                    dd 正月限定刻印どらやき
 
-                dt 2021.03.01
-                dd 春のギフトセット
+                    dt 2021.03.01
+                    dd 春のギフトセット
 
-                dt 2021.07.01
-                dd 中元ギフトのご案内
+                    dt 2021.07.01
+                    dd 中元ギフトのご案内
 
-                dt 2021.08.01
-                dd 高橋さん家の水ようかん
+                    dt 2021.08.01
+                    dd 高橋さん家の水ようかん
+
+                
     //新しい価値の想像
-    section.p2-wrap
+    .section-wrap#value
         h2.section-t 新しい価値の想像
-        .p2-img-wrap
-            img('**')
-            p テキストテキストテキストテキスト
-        
+            .value-wrap
+                img('**')
+                p テキストテキストテキストテキスト
+            
     
     //科学と技術の調和
-    .section.p3-wrap
+    .section-wrap#harmony
         h2.section-t 科学と技術の調和
-        .p3-img-wrap
-            img('**')
-            p テキストテキストテキストテキスト
+            .harmony-wrap
+                img('**')
+                p テキストテキストテキストテキスト
 
 
-    //- G-map
-    .map
+    //マップ
+    .section-wrap#map
         iframe
 
     

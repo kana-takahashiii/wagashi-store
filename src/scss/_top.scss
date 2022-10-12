@@ -42,115 +42,21 @@ body {
 
 
 
-
 // ---------------------
-// オープニングローディング
+// main
 // ---------------------
-.shutter {
-        position:fixed;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        background-color: var(--shutter-burger-color);
-        z-index:9999;
-        animation: byeShutter 2.6s forwards;
-        // 疑似要素
-        &::before,
-        &::after{
-            content:'';
-            position:absolute;
-            top:0;
-            left:0;
-            bottom:0;
-            margin:auto;
+main{
+    .section-wrap {
+        h2.section-t {
+            font-size: var(--font-13-16);
         }
-        // カーテン１枚目
-        &::before{
-            background-color:#b5a58b;
-            width:0;
-            height:1px;
-            animation: shutterOpen1 3s forwards;
-        }
-        // カーテン２枚目
-        &::after{
-            background-color: #f3f3f3;
-            // width:120%;
-            width:100%;
-            height:0;
-            margin-left:-10%;
-            animation: shutterOpen2 3s forwards;
-        }
-}
+    }
 
 
+    .map {
 
-// ---------------------
-// kv
-// ---------------------
-.content{
-    width: 100%;
-    animation: contentScale 2.5s forwards;
-}
-// shutter挙動
-@keyframes byeShutter{
-    70%{
-        opacity:1;
-    }
-    100%{
-        opacity:0;
-        display:none;
-        z-index:-1;
     }
 }
-@keyframes shutterOpen1{
-    0%{
-        width:0;
-        height:1px;
-    }
-    50%{
-        width:100%;
-        height:1px;
-    }
-    90%{
-        width:100%;
-        height:100%;
-    }
-    100%{
-        width:100%;
-        height:100%;
-    }
-}
-@keyframes shutterOpen2{
-    60%{
-        width:120%;
-        height:0;
-        transform:rotate(5deg);
-    }
-    90%{
-        width:120%;
-        height:100%;
-        transform:rotate(-5deg);
-    }
-    100%{
-        width:120%;
-        height:100%;
-        transform:rotate(-5deg);
-    }
-}
-@keyframes contentScale{
-70%{
-    transform:perspective(800px) scale(0.9) rotateX(15deg);
-}
-100%{
-    transform:perspective(800px) scale(1) rotateX(0);
-}
-}
-// ---------------------
-// end
-// ---------------------
-
-
 
 // ---------------------
 // top
