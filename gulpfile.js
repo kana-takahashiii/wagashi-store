@@ -50,7 +50,6 @@ task('pug', function () {
       .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
       .pipe(pug({
         pretty: true,
-        // basedir: "./src/pug"
         basedir: ["./src/pug", "./src/pug/**/*.pug"]
       }))
       .pipe(dest(paths.html))
