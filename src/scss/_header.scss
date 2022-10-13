@@ -166,18 +166,27 @@
         position: relative;
         z-index: 0;
         .kv-title {
+            font-size: clamp(2rem,10vw,5rem);
             display: flex;
             justify-content: flex-end;
             position: absolute;
-            right: 0;
+            right: 5vw;
             top: 80px;
             z-index: 1;
             color: #ffff;
         }
     }
     ul {
-        li {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 80px;
+        right: 20vw;
+        column-gap: 25px;
 
+        li a{
+            text-decoration: none;
+            color: #ffff;
         }
     }
 }
