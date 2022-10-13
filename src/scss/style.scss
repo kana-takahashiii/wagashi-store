@@ -42,27 +42,20 @@ body {
     line-height: 1.5;
     letter-spacing: .05em;
     margin: 0 auto;
-    p,li,.section-wrap {
+    // 縦書き
+    a,p,li,.section-wrap {
         writing-mode: vertical-rl;
+        text-decoration: none;
+    }
+    a {
+        color: #ffff;
     }
     
 
-    h2{
-        font-size: var(--h2);
-        font-weight: 700;
-        line-height: 1;
-    }
 
-    h3 {
-        //--h3___WORKS-site-title GM
-        width: 80vw;
-        margin:  0 auto;
-        font-size: clamp( 4rem, 7vw, 10rem);
-        font-weight: 700;
-        line-height: 1;
-        // padding-bottom: 160px;
-    }
 }
+
+
 
 
 // TOP>>js-trigger共通
@@ -77,17 +70,5 @@ body {
 
 
 // -----SP-----
-@include mq(sp) {
-    body {
-        .top {
-            width: var(--media-sp-width);
-            #works,#about,#contact{
-                padding-top: 100px;
-            }    
-        }
-        .about {
-            width: var(--media-sp-width) ;
-        }
-    }
-}
+@include mq(sp) {}
 // code-end

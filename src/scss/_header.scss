@@ -162,8 +162,8 @@
 // header
 
 #header.nav {
+    position: relative;
     .kv-img {
-        position: relative;
         z-index: 0;
         .kv-title {
             font-size: clamp(2rem,10vw,5rem);
@@ -183,10 +183,17 @@
         top: 80px;
         right: 20vw;
         column-gap: 25px;
-
-        li a{
-            text-decoration: none;
-            color: #ffff;
+    }
+    .online {
+        justify-content: flex-start;
+        position: absolute;
+        background: rgba(255,255,255,0.2);
+        left: 5%;
+        top: 50%;
+        a {
+            display: block;
+            border: solid 1px #ccc;
+            padding: 30px 18px;
         }
     }
 }
