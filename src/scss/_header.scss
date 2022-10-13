@@ -161,10 +161,23 @@
 
 // header
 
-#header.nav {    
+#header.nav {
+    .kv-img {
+        position: relative;
+        z-index: 0;
+        .kv-title {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            right: 0;
+            top: 80px;
+            z-index: 1;
+            color: #ffff;
+        }
+    }
     ul {
-        li a{
-            color:#FFFFFF;
+        li {
+
         }
     }
 }
