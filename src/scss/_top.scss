@@ -49,16 +49,19 @@ body {
     margin: 0 0 0 auto;
     .section {
             &__title {
-                color: red;
-                // color: var(--font-color);
-                font-size: 100px;
-                // font-size: clamp(4rem,10vw,3.6rem);
+                color: var(--font-color);
+                font-size: clamp(2.8rem,7vw,3.6rem);
             }
-            &__firstwrap {
+            &__first-wrap {
+                display: flex;
+                flex-direction: row-reverse;
+                padding-top: 180px;
+
                 dl {
                     display: grid;
                     row-gap: 5px;
                     padding: 0 100px 0 0;
+                    writing-mode: vertical-rl;
                     dt{
                         border-right: solid 1px var(--font-color);
                         padding-right: 30px;
@@ -66,6 +69,17 @@ body {
                     dd {
                         margin-right: 5px;
                         }
+                }
+            }
+            &__secondwrap {
+                .value-wrap{
+                    
+                }
+            }
+            
+            &__third-wrap {
+                .harmony-wrap {
+                    
                 }
             }
     }
@@ -76,4 +90,30 @@ body {
 
 
     
+}
+
+
+
+// -----SP-----
+@include mq(sp) {
+    #main {
+        .section {
+                &__title {
+                }
+                &__firstwrap {
+                    dl {
+                        padding: 0 40px 0 0;
+                        dt{
+                            border-right: solid 1px var(--font-color);
+                            padding-right: 10px;
+                        }
+                        dd {
+                            margin-right: 5px;
+                            }
+                    }
+                }
+        }
+    }
+}
+// code-end
 }
