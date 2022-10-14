@@ -55,30 +55,22 @@ body {
     a {
         color: #ffff;
     }
-    #main {
+    .section {
         width: 80vw;
         margin: 0 auto;
     }
 }
-
-
-
-
-// TOP>>js-trigger共通
-#works,#about,#contact{
-    opacity: 0;
-    transition: opacity 0.5s linear;
-        &.is-active {
-            opacity: 1;
-        }
-}
-
-
-
 // -----SP-----
 @include mq(sp) {
     #main {
-        width: 90vw;
+        .section {
+            width: 90vw;
+        }
     }
 }
 // code-end
+
+
+
+
+

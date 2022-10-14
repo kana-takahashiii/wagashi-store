@@ -73,6 +73,7 @@ body {
                 padding-top: 100px;
                 &__title {
                     margin-left: 20px;
+                    font-size: clamp(2.4rem,6vw,3.6rem);
                 }
                 &__value{
                     aspect-ratio: 3 / 2;
@@ -113,7 +114,7 @@ body {
         .section {
                 &__title {
                 }
-                &__firstwrap {
+                &__first-wrap {
                     dl {
                         padding: 0 40px 0 0;
                         dt{
@@ -123,6 +124,14 @@ body {
                         dd {
                             margin-right: 5px;
                             }
+                    }
+                }
+                &__second-wrap {
+                    &__titlle {
+                        margin-left: 10px;
+                    }
+                    &__value {
+                        width: 100%;
                     }
                 }
         }
