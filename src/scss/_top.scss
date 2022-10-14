@@ -54,19 +54,20 @@ body {
                 font-size: 100px;
                 // font-size: clamp(4rem,10vw,3.6rem);
             }
-            dl {
-                display: grid;
-                row-gap: 5px;
-                padding: 0 100px 0 0;
-                dt{
-                    border-right: solid 1px var(--font-color);
-                    padding-right: 30px;
-                }
-                dd {
-                    margin-right: 5px;
+            &__firstwrap {
+                dl {
+                    display: grid;
+                    row-gap: 5px;
+                    padding: 0 100px 0 0;
+                    dt{
+                        border-right: solid 1px var(--font-color);
+                        padding-right: 30px;
                     }
-            
-        }
+                    dd {
+                        margin-right: 5px;
+                        }
+                }
+            }
     }
 
 
