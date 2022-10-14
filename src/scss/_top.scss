@@ -71,11 +71,14 @@ body {
                         }
                 }
             }
-            &__secondwrap {
-                .value-wrap{
+            &__second-wrap {
                     display: flex;
                     flex-direction: row-reverse;    
                     padding-top: 100px;
+                &__value{
+                    p {
+                        color: red;
+                    }
                 }
             }
             
