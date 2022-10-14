@@ -47,17 +47,23 @@ body {
 // ---------------------
 #main {
     .section {
+        margin: 0 0 0 auto;
+
         &__title{
-            color: #E27C39;
+            color: var(--font-color);
         }
         &__news-wrap{
             dl {
+                display: grid;
+                row-gap: 5px;
+                padding: 0 100px 0 0;
                 dt{
-
+                    border-right: solid 1px var(--font-color);
+                    padding-right: 30px;
                 }
-            dd {
-
-                }
+                dd {
+                    margin-right: 5px;
+                    }
             }
         }
     }
