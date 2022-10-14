@@ -71,5 +71,9 @@ body {
 
 
 // -----SP-----
-@include mq(sp) {}
+@include mq(sp) {
+    #main {
+        width: 90vw;
+    }
+}
 // code-end
