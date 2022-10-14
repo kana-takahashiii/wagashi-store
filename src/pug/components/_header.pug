@@ -28,18 +28,22 @@ html(lang='ja')
     //- --------------------------
     //- header
     //--------------------------
-    #header.nav
-      .kv-img-wrap
-        img(src="./img/kv.jpg")
-        .kv-title
+    #header
+      .kv
+        .kv__img
+          img(src="./img/kv.jpg")
+        .kv__title
           p 創作和菓子庵
-      ul
-        li
-          a(href="/") お知らせ
-        li
-          a(href="/") 商品ご紹介
-        li
-          a(href="/#") 店舗のご案内
+  
+      .nav
+        ul
+          li
+            a(href="/") お知らせ
+          li
+            a(href="/") 商品ご紹介
+          li
+            a(href="/#") 店舗のご案内
+
       //-　オンラインストア
       .online-wrap
         a(href="/") オンラインストア

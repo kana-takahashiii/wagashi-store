@@ -161,23 +161,26 @@
 
 // header
 
-#header.nav {
-    position: relative;
-    .kv-img-wrap {
-        z-index: 0;
-        &__kv-title {
+#header {
+    .kv {
+        &__img {
+            position: relative;
+            z-index: 0;
+        }
+        &__title {
             display: flex;
             justify-content: flex-end;
             position: absolute;
             right: 5vw;
             top: 80px;
             z-index: 1;
-            &__p {
+            p {
                 font-size: clamp(2rem,10vw,5rem);
                 color: #ffff;
             }
         }
     }
+
     ul {
         display: flex;
         justify-content: flex-end;
