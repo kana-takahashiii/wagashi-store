@@ -78,7 +78,7 @@ body {
                 &__value{
                     padding-right: 100px;
                     p {
-                        color: red;
+                        writing-mode: unset;
                     }
                 }
             }
