@@ -163,17 +163,19 @@
 
 #header.nav {
     position: relative;
-    .kv-img {
+    .kv-img-wrap {
         z-index: 0;
-        .kv-title {
-            font-size: clamp(2rem,10vw,5rem);
+        &__kv-title {
             display: flex;
             justify-content: flex-end;
             position: absolute;
             right: 5vw;
             top: 80px;
             z-index: 1;
-            color: #ffff;
+            &__p {
+                font-size: clamp(2rem,10vw,5rem);
+                color: #ffff;
+            }
         }
     }
     ul {
@@ -184,7 +186,7 @@
         right: 20vw;
         column-gap: 25px;
     }
-    .online {
+    .online-wrap {
         justify-content: flex-start;
         position: absolute;
         background: rgba(255,255,255,0.2);
