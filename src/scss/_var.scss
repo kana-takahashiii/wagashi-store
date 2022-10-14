@@ -2,9 +2,8 @@
 :root {
     --main-color: #E6E2D7;
     --font-family: 'Noto Serif JP';
-    // --font-family: 'Noto Sans JP', serif ,sans-serif;
     --font-color: #393838;
-    --font-13-16: clamp(1.2rem, 2vw, 1.6rem);
+    --font-12-16: clamp(1.2rem, 2vw, 1.6rem);
 
     // 各セクションタイトル
     --h2: clamp(6rem, 16vw, 16rem);
