@@ -159,12 +159,24 @@
 
 
 
+// -----------
 // header
-
+// ----------
 #header {
+    .nav {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 80px;
+            right: 20vw;
+            column-gap: 25px;
+        }
+    }
+    
     .kv {
+        position: relative;
         &__img {
-            position: relative;
             z-index: 0;
         }
         &__title {
@@ -179,27 +191,18 @@
                 color: #ffff;
             }
         }
-    }
-
-    ul {
-        display: flex;
-        justify-content: flex-end;
-        position: absolute;
-        top: 80px;
-        right: 20vw;
-        column-gap: 25px;
-    }
-    .online-wrap {
-        justify-content: flex-start;
-        position: absolute;
-        background: rgba(255,255,255,0.2);
-        left: 5%;
-        top: 50%;
-        a {
-            display: block;
-            border: solid 1px #ccc;
-            padding: 30px 18px;
-        }
+        &__online--left {
+            justify-content: flex-start;
+            position: absolute;
+            background: rgba(255,255,255,0.2);
+            left: 5%;
+            top: 50%;
+            a {
+                display: block;
+                border: solid 1px #ccc;
+                padding: 30px 18px;
+            }
+        }    
     }
 }
 
