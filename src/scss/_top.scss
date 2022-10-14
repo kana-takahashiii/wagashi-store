@@ -72,10 +72,11 @@ body {
                 }
             }
             &__second-wrap {
-                    display: flex;
-                    flex-direction: row-reverse;    
-                    padding-top: 100px;
+                display: flex;
+                flex-direction: row-reverse;    
+                padding-top: 100px;
                 &__value{
+                    padding-right: 100px;
                     p {
                         color: red;
                     }
