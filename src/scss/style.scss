@@ -47,6 +47,11 @@ body {
         writing-mode: vertical-rl;
         text-decoration: none;
     }
+    // 共通
+    h2 {
+        color: var(--font-color);
+        font-size: clamp(2.8rem,7vw,3.6rem);
+    }
     a {
         color: #ffff;
     }

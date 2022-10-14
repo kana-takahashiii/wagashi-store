@@ -48,10 +48,6 @@ body {
 #main {
     margin: 0 0 0 auto;
     .section {
-            &__title {
-                color: var(--font-color);
-                font-size: clamp(2.8rem,7vw,3.6rem);
-            }
             &__first-wrap {
                 display: flex;
                 flex-direction: row-reverse;
@@ -91,8 +87,8 @@ body {
                         writing-mode: unset;
                     }
                 }
-                
             }
+            
             
             &__third-wrap {
                 .harmony-wrap {
