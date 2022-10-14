@@ -45,7 +45,20 @@ body {
 // ---------------------
 // main
 // ---------------------
-#news {
-    background: url(./img/kv.jpg) no-repeat;
-    
+#main {
+    .section {
+        &__title{
+            color: #E27C39;
+        }
+        &__news-wrap{
+            dl {
+                dt{
+
+                }
+            dd {
+
+                }
+            }
+        }
+    }
 }

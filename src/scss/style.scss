@@ -43,7 +43,7 @@ body {
     letter-spacing: .05em;
     margin: 0 auto;
     // 縦書き
-    a,p,li,.section-wrap {
+    a,p,li,.section {
         writing-mode: vertical-rl;
         text-decoration: none;
     }
