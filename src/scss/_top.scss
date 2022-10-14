@@ -73,13 +73,15 @@ body {
             }
             &__secondwrap {
                 .value-wrap{
-                    
+                    display: flex;
+                    flex-direction: row-reverse;    
+                    padding-top: 100px;
                 }
             }
             
             &__third-wrap {
                 .harmony-wrap {
-                    
+                    padding-top: 100px;
                 }
             }
     }
@@ -116,4 +118,3 @@ body {
     }
 }
 // code-end
-}
