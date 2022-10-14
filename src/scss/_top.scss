@@ -48,11 +48,12 @@ body {
 #main {
     .section {
         margin: 0 0 0 auto;
-
-        &__title{
-            color: var(--font-color);
-        }
-        &__news-wrap{
+        .section__firstwrap {
+            &__title{
+                color: var(--font-color);
+                font-size: 100px;
+                // font-size: clamp(4rem,10vw,3.6rem);
+            }
             dl {
                 display: grid;
                 row-gap: 5px;

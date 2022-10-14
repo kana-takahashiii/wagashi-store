@@ -4,8 +4,8 @@ include components/_header.pug
 #main
     //お知らせ
     .section
-        h2.section__title お知らせ
-        .section__news-wrap
+        .section__firstwrap
+            h2.section__title お知らせ
             dl
                 dt 2021.01.01
                 dd 正月限定刻印どらやき
@@ -20,15 +20,16 @@ include components/_header.pug
                 dd 高橋さん家の水ようかん
 
                 
-    //新しい価値の想像
-    .section-wrap#value
-        h2.section-t 新しい価値の想像
+        //新しい価値の想像
+        .section__second-wrap
+            h2.section__title 新しい価値の想像
             .value-wrap
                 img('**')
                 p テキストテキストテキストテキスト
-    //科学と技術の調和
-    .section-wrap#harmony
-        h2.section-t 科学と技術の調和
+
+        //科学と技術の調和
+        .section__third-wrap
+            h2.section__title 科学と技術の調和
             .harmony-wrap
                 img('**')
                 p テキストテキストテキストテキスト
