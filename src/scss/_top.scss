@@ -46,11 +46,11 @@ body {
 // main
 // ---------------------
 #main {
+    margin: 0 0 0 auto;
     .section {
-        margin: 0 0 0 auto;
-        .section__firstwrap {
-            &__title{
-                color: var(--font-color);
+            &__title {
+                color: red;
+                // color: var(--font-color);
                 font-size: 100px;
                 // font-size: clamp(4rem,10vw,3.6rem);
             }
@@ -65,7 +65,14 @@ body {
                 dd {
                     margin-right: 5px;
                     }
-            }
+            
         }
     }
+
+
+
+
+
+
+    
 }
