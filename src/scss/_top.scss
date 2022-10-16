@@ -67,7 +67,7 @@ body {
                         }
                 }
             }
-            &__second-wrap {
+            &__second-wrap,&__third-wrap{
                 display: flex;
                 flex-direction: row-reverse;    
                 padding-top: 100px;
@@ -75,7 +75,7 @@ body {
                     margin-left: 20px;
                     font-size: clamp(2.4rem,6vw,3.6rem);
                 }
-                &__value{
+                &__value,&__harmony{
                     margin-top: 100px;
                     aspect-ratio: 3 / 2;
                     // overflow: hidden;
@@ -91,20 +91,23 @@ body {
                         position: absolute;
                         color: var(--main-color);
                         background: rgba(249, 233, 6, 0.6);
-                        bottom:20%;
-                        width: 50%;
-                        left: -130px;
+                        bottom:20px;
+                        width: 56%;
+                        left: -20px;
                         padding: 50px 0;
                         text-align: center;
                     }
-                
                 }
             }
             
             
             &__third-wrap {
-                .harmony-wrap {
-                    padding-top: 100px;
+                flex-direction: unset;
+                &__harmony {
+                    p {
+                        background:rgba(149, 42, 38, 0.6);
+                        left: calc(100% - 20px);
+                    }
                 }
             }
     }
