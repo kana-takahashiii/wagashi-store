@@ -46,6 +46,7 @@ body {
 // main
 // ---------------------
 #main {
+    padding-bottom: 180px;
     margin: 0 0 0 auto;
     .section {
             &__first-wrap {
@@ -117,9 +118,6 @@ body {
             aspect-ratio: 3 / 2;
         }
     }
-
-
-
 }
 
 

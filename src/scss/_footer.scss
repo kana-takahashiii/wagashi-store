@@ -1,27 +1,49 @@
-footer {
-    position: relative;
-    p {
-        font-family: 'Noto Sans JP', sans-serif;
-        text-align: center;
+.footer {
+    width: 100%;
+    background-color: var(--font-color);
+    color: var(--main-color);
+    .footer__con__wrap,.nav {
+        margin-top: 80px;
+        &__title {
+            h3 {
+                font-size: clamp(2rem,10vw,5rem);
+            }
+        }
+        &__address {
+            p {
+                text-orientation: upright;
+                span {
+                    writing-mode: vertical-rl;
+                }
+            }
+        }
+        &__tel {
+            p {
+                
+            }
+        }
     }
-    padding: 200px 0 40px;
+    .nav {
+        ul {
+            li {
 
+            }
+        }
+    }
 }
 
 
-// 
+
+
+
 @include mq(tab) {
     footer {
-        padding: 100px 0 40px;
     }
 
 }
 
 
 @include mq(sp) {
-        // footer {
-        //     padding: 100px 0 40px;
-        // }
 
 }
 

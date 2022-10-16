@@ -46,7 +46,7 @@ body {
     letter-spacing: .05em;
     margin: 0 auto;
     // 縦書き
-    h1,h2,a,p,li {
+    h1,h2,a,p,li,.footer {
         writing-mode: vertical-rl;
         text-decoration: none;
     }
