@@ -79,6 +79,7 @@ body {
                     aspect-ratio: 3 / 2;
                     overflow: hidden;
                     width: 57%;
+                    position: relative;
                     img {
                         object-fit: cover;
                         width: 100%;
@@ -86,7 +87,15 @@ body {
                     }
                     p {
                         writing-mode: unset;
+                        position: absolute;
+                        color: var(--main-color);
+                        background: rgba(249, 233, 6, 0.6);
+                        bottom:20%;
+                        width: 50%;
+                        left: -20px;
+                        // z-index: 2;
                     }
+                
                 }
             }
             

@@ -189,7 +189,7 @@
             z-index: 1;
             h1 {
                 font-size: clamp(2rem,10vw,5rem);
-                color: #ffff;
+                color: var(--main-color);
             }
         }
         &__online--left {
