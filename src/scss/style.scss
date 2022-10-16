@@ -58,10 +58,11 @@ body {
     a {
         color: var(--main-color);
     }
-    .section {
-        width: 80vw;
+    .section,.section__map{
+        width: var(--width);
         margin: 0 auto;
     }
+
 }
 
 
@@ -69,8 +70,8 @@ body {
 // -----SP-----
 @include mq(sp) {
     #main {
-        .section {
-            width: 90vw;
+        .section,.section__map {
+            width: var(--media-sp-width);
         }
     }
 }

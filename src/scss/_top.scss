@@ -110,17 +110,16 @@ body {
             }
     }
     .section__map {
-        &__iframe {
-            
+        width: 70vw;
+        padding-top: 180px;
+        iframe {
+            width: 100%;
+            aspect-ratio: 3 / 2;
         }
     }
 
 
 
-
-
-
-    
 }
 
 
