@@ -99,8 +99,6 @@ body {
                     }
                 }
             }
-            
-            
             &__third-wrap {
                 flex-direction: unset;
                 &__harmony {
@@ -110,6 +108,11 @@ body {
                     }
                 }
             }
+    }
+    .section__map {
+        &__iframe {
+            
+        }
     }
 
 
