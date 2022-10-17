@@ -46,9 +46,10 @@ body {
     letter-spacing: .05em;
     margin: 0 auto;
     // 縦書き
-    h1,h2,a,p,li,.footer {
+    h1,h2,a,p,li,#footer {
         writing-mode: vertical-rl;
         text-decoration: none;
+        list-style: none;
     }
     // 共通
     h2 {

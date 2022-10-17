@@ -1,35 +1,38 @@
-.footer {
-    width: 100%;
-    background-color: var(--font-color);
-    color: var(--main-color);
-    .footer__con__wrap,.nav {
-        margin-top: 80px;
-        &__title {
-            h3 {
-                font-size: clamp(2rem,10vw,5rem);
+#footer {
+        width: 100%;
+        writing-mode: vertical-rl;
+        background-color: var(--font-color);
+        color: var(--main-color);
+        .footer__con__wrap,.nav {
+            margin-top: 80px;
+            &__title {
+                h3 {
+                    font-size: clamp(2rem,10vw,5rem);
+                }
             }
-        }
-        &__address {
-            p {
-                text-orientation: upright;
-                span {
-                    writing-mode: vertical-rl;
+            &__address {
+                p {
+                    text-orientation: upright;
+                    span {
+                        writing-mode: vertical-rl;
+                    }
+                }
+            }
+            &__tel {
+                p {
+                    
                 }
             }
         }
-        &__tel {
-            p {
-                
-            }
-        }
-    }
-    .nav {
-        ul {
-            li {
 
+        .nav {
+            ul {
+                li {
+
+                }
             }
         }
-    }
+    
 }
 
 
