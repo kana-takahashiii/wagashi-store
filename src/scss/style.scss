@@ -35,6 +35,21 @@ html {
     font-size: 62.5%;
 }
 body {
+    #header,#footer {
+        .nav {
+            ul {
+                z-index: 1;
+                display: flex;
+                // justify-content: flex-end;
+                // position: absolute;
+                // column-gap: 25px;
+                list-style: none;
+                // flex-direction: row-reverse;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+            }
+        }
+    }
     img {
         width:100%;
     }
@@ -50,6 +65,9 @@ body {
         writing-mode: vertical-rl;
         text-decoration: none;
         list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    
     }
     // 共通
     h2 {

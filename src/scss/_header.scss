@@ -165,17 +165,18 @@
 #header {
     .nav {
         ul {
-            z-index: 1;
-            display: flex;
-            justify-content: flex-end;
+            // z-index: 1;
+            // display: flex;
+            // justify-content: flex-end;
             position: absolute;
             top: 80px;
             right: 20vw;
-            column-gap: 25px;
-            list-style: none;
             flex-direction: row-reverse;
-            margin-block-start: 0em;
-            margin-block-end: 0em;
+            column-gap: 25px;
+            // list-style: none;
+            // flex-direction: row-reverse;
+            // margin-block-start: 0em;
+            // margin-block-end: 0em;
         }
     }
     

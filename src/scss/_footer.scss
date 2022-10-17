@@ -1,38 +1,42 @@
 #footer {
+        // padding: 80px 30px 80px;   
         width: 100%;
         writing-mode: vertical-rl;
         background-color: var(--font-color);
         color: var(--main-color);
         .footer__con__wrap,.nav {
-            margin-top: 80px;
+            // margin: 80px 0;
             &__title {
                 h3 {
                     font-size: clamp(2rem,10vw,5rem);
                 }
             }
-            &__address {
+            &__address,&__tel {
+                display: flex;
                 p {
                     text-orientation: upright;
-                    span {
-                        writing-mode: vertical-rl;
+                    writing-mode: vertical-rl;
                     }
-                }
-            }
-            &__tel {
-                p {
-                    
-                }
-            }
+            }    
         }
 
         .nav {
-            ul {
-                li {
+            margin-right: 60px;
 
-                }
+            ul {
+                flex-direction: column;
+                row-gap: 25px;
+                // flex-direction: column;
             }
         }
+        // .copy-t{ 
+            p.copy-light {
+                writing-mode: lr;
+                text-align: center;
+            }
+        // }
     
+
 }
 
 
