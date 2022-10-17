@@ -1,17 +1,22 @@
 #footer {
         padding: 80px 0; 
         width: 100%;
-        writing-mode: vertical-rl;
+        // writing-mode: vertical-rl;
         background-color: var(--font-color);
         color: var(--main-color);
         .footer__con__wrap,.nav {
             // margin: 80px 0;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row-reverse;
+
             &__title {
                 padding: 0 10vw 0 60px;
                 h3 {
                     font-size: clamp(2rem,10vw,5rem);
                     margin-block-start: 0;
                     margin-block-end: 0;
+                    writing-mode: vertical-rl;
                 }
             }
             &__address,&__tel {
@@ -20,24 +25,23 @@
                     text-orientation: upright;
                     writing-mode: vertical-rl;
                     }
-            }    
-        }
+                }
+                
+                .nav {
+                    margin-right: 60px;
+                    
+                    ul {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        column-gap: 25px;
+                    }
+                }
+        } 
 
-        .nav {
-            margin-right: 60px;
-
-            ul {
-                flex-direction: column;
-                row-gap: 25px;
-                // flex-direction: column;
-            }
+        p.copy-light {
+            writing-mode: lr;
+            text-align: center;
         }
-        // .copy-t{ 
-            p.copy-light {
-                writing-mode: lr;
-                text-align: center;
-            }
-        // }
     
 
 }
