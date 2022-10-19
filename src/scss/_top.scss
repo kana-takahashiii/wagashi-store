@@ -80,13 +80,16 @@ body {
                     margin-top: 100px;
                     aspect-ratio: 3 / 2;
                     // overflow: hidden;
-                    width: 57%;
+                    width: 100%;
+                    // width: 57%;
                     position: relative;
                     img {
                         object-fit: cover;
                         width: 100%;
                         height: 100%;
                     }
+                }
+                &__value {
                     p {
                         writing-mode: unset;
                         position: absolute;
@@ -99,6 +102,20 @@ body {
                         text-align: center;
                     }
                 }
+                &__harmony {
+                    p {
+                        writing-mode: unset;
+                        position: absolute;
+                        color: var(--main-color);
+                        background:rgba(149, 42, 38, 0.6);
+                        bottom: -20px;
+                        width: 56%;
+                        right: -20px;
+                        padding: 50px 0;
+                        text-align: center;
+                    }
+
+                }
             }
             &__third-wrap {
                 flex-direction: unset;
@@ -109,7 +126,7 @@ body {
                 &__harmony {
                     p {
                         background:rgba(149, 42, 38, 0.6);
-                        left: calc(100% - 20px);
+                        // left: calc( 100% - 20px );
                     }
                 }
             }
@@ -130,50 +147,55 @@ body {
 @include mq(sp) {
     #main {
         .section {
-                &__title {
-                }
-                &__first-wrap {
-                    padding-top: 180px;
-                    dl {
-                        padding: 20px 30px 0 0;
-                        margin-block-start: 0;
-                        margin-block-end: 0;
-                        dt{
-                            border-right: solid 1px var(--font-color);
-                            padding-right: 10px;
-                        }
-                        dd {
-                            margin-right: 5px;
-                            }
+            &__title {
+            }
+            &__first-wrap {
+                padding-top: 180px;
+                dl {
+                    padding: 20px 30px 0 0;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    dt{
+                        border-right: solid 1px var(--font-color);
+                        padding-right: 10px;
                     }
+                    dd {
+                        margin-right: 5px;
+                        }
                 }
+            }
 
-                &__second-wrap {
-                    padding-top: 180px;
-                    .section__second-wrap{
-                        &__titlle {
-                            margin-left: 10px;
-                        }
-                        &__value {
-                            width: 100%;
-                        }
-                    }
-                }
+            &__second-wrap,&__third-wrap {
+                padding-top: 180px;
+                // .section__second-wrap{
+                //     // &__titlle {
+                //     //     margin-left: 10px;
+                //     // }
+                //     // &__value {
+                //     //     width: 100%;
+                //     // }
+                // }
+                // &__harmony {
+                //     p {
+                //         right: -10px;
+                //     }
+                // }
+            }
 
-                &__third-wrap {
-                    padding-top: 180px;
-                    .section__third-wrap {
-                        &__title {
-                            margin-right: 10px;
-                        }
-                        &__harmony {
-                            // width: 100%;
-                            p {
+            // &__third-wrap {
+            //     // padding-top: 180px;
+            //     // .section__third-wrap {
+            //     //     // &__title {
+            //     //     //     margin-right: 10px;
+            //     //     // }
+            //     //     // &__harmony {
+            //     //     //     // width: 100%;
+            //     //     //     p {
 
-                            }
-                        }
-                    }
-                }   
+            //     //     //     }
+            //     //     // }
+            //     // }
+            // }   
         }
     }
 }
