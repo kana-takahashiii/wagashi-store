@@ -1,44 +1,6 @@
-body {
-    position: relative;
-}
-// カーソル
-.cursor,
-.follower {
-    border-radius: 50%;
-    // position: absolute;
-    position: fixed;
-    top: 0;
-    left: 0; 
-    pointer-events: none;
-}
-.cursor {
-    width: 8px;
-    height: 8px;
-    background-color:#1e1e1e;
-    z-index: 1001;
-}
-.follower {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(#E27C39, .5);
-    z-index: 1000;
-    transition: width ease .8s, height ease .6s;
-    text-align: center;
-    span {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: bold;
-        transform: scale(0);
-    }
-    &.is-active {
-        width: 100px;
-        height: 100px;
-    }
-}
-// endカーソル
+// body {
+//     position: relative;
+// }
 
 
 
