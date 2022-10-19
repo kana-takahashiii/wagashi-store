@@ -87,8 +87,8 @@ body {
         .section,.section__map {
             width: var(--media-sp-width);
         }
-        .section__second-wrap,.section__third-wrap {
-            &__value,&__harmony {
+        .section__second-wrap {
+            &__value, &__harmony {
                 width: 100%;
             }
         }
@@ -96,12 +96,27 @@ body {
             &__title {
                 margin-left: 10px;
             }
+            &__value {
+                p {
+                    padding: 30px 0;
+                    left: -10px;
+                }
+            }
         }
+
         .section__third-wrap {
             &__title {
                 margin-right: 10px;
             }
+            &__harmony {
+                width: 100%;
+                p {
+                    padding: 30px 0;
+                    right: -10px;
+                }    
+            }
         }
+        
         
 
     }
