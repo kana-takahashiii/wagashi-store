@@ -41,11 +41,23 @@ html(lang='ja')
 
       .kv
         .kv__img
-          img(src="./img/kv.jpg")
+          picture
+            source(media="(min-width:600px)", srcset="./img/kv.jpg")
+            source(media="(max-width:599px)", srcset="./img/kv-img-sp2x.png")
+            img(src="./img/kv.jpg")
         .kv__title
           h1 創作和菓子庵
         .kv__online--left
           a(href="/") オンラインストア
+
+      //- .kv
+      //-   .kv__img
+      //-     img(src="./img/kv.jpg")
+      //-   .kv__title
+      //-     h1 創作和菓子庵
+      //-   .kv__online--left
+      //-     a(href="/") オンラインストア
+
 
     //- //- --------------------------
     //- //-TAB,SP nav
