@@ -73,7 +73,7 @@ body {
                 flex-direction: row-reverse;    
                 padding-top: 100px;
                 &__title {
-                    margin-right: 20px;
+                    margin-left: 20px;
                     font-size: clamp(2.4rem,6vw,3.6rem);
                 }
                 &__value,&__harmony{
@@ -102,6 +102,10 @@ body {
             }
             &__third-wrap {
                 flex-direction: unset;
+                &__title {
+                    margin-right: 20px;
+                    margin-left: 0;
+                }
                 &__harmony {
                     p {
                         background:rgba(149, 42, 38, 0.6);
@@ -146,27 +150,34 @@ body {
 
                 &__second-wrap {
                     padding-top: 180px;
-                    &__titlle {
-                        margin-left: 10px;
-                    }
-                    &__value {
-                        width: 100%;
+                    .section__second-wrap{
+                        &__titlle {
+                            margin-left: 10px;
+                        }
+                        &__value {
+                            width: 100%;
+                        }
                     }
                 }
 
                 &__third-wrap {
                     padding-top: 180px;
-                    &__title {
-                    
-                    }
-                    &__harmony {
-                        p {
+                    .section__third-wrap {
+                        &__title {
+                            margin-right: 10px;
+                        }
+                        &__harmony {
+                            width: 100%;
+                            p {
 
+                            }
                         }
                     }
-                }
-        
+                }   
         }
     }
 }
 // code-end
+
+
+

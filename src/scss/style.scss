@@ -35,6 +35,13 @@ html {
     font-size: 62.5%;
 }
 body {
+    font-size: var(--font-12-16);
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background: var(--main-color);
+    line-height: 1.5;
+    letter-spacing: .05em;
+    margin: 0 auto;
     #header,#footer {
         .nav {
             ul {
@@ -49,13 +56,6 @@ body {
     img {
         width:100%;
     }
-    font-size: var(--font-12-16);
-    font-family: var(--font-family);
-    color: var(--font-color);
-    background: var(--main-color);
-    line-height: 1.5;
-    letter-spacing: .05em;
-    margin: 0 auto;
     // 縦書き
     h1,h2,a,p,li {
         writing-mode: vertical-rl;
@@ -77,7 +77,6 @@ body {
         width: var(--width);
         margin: 0 auto;
     }
-
 }
 
 
@@ -88,6 +87,23 @@ body {
         .section,.section__map {
             width: var(--media-sp-width);
         }
+        .section__second-wrap,.section__third-wrap {
+            &__value,&__harmony {
+                width: 100%;
+            }
+        }
+        .section__second-wrap {
+            &__title {
+                margin-left: 10px;
+            }
+        }
+        .section__third-wrap {
+            &__title {
+                margin-right: 10px;
+            }
+        }
+        
+
     }
 }
 // code-end
