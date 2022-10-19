@@ -262,6 +262,11 @@
 
 @include mq(sp) {
     #header {
+        .nav {
+            ul {
+                padding-right: 60px;
+            }
+        }
         .kv {
             &__title {
                 right: 5vw;
