@@ -181,7 +181,7 @@
     .kv {
         position: relative;
         // height: 100vh;
-        // overflow: hidden;
+        overflow: hidden;
         &__img {
             // height: 100%;
             // object-fit: cover;
@@ -190,6 +190,12 @@
             img {
                 height: 100%;
                 object-fit: cover;
+            }
+            // テスト
+            .pattern1 img {
+                opacity: 0;
+                transform: translateX(40px);
+                transition: .5s;
             }
         }
         &__title {
@@ -217,7 +223,8 @@
                 border: solid 1px #ccc;
                 padding: 30px 18px;
             }
-        }    
+        }   
+    
     }
 }
 
