@@ -1,1 +1,1 @@
-window.addEventListener("DOMContentLoaded",function(){const o=document.querySelector("   pattern1");o.classList.add("show"),console.log(o),console.log(show)});
+window.onload=function(){const d=document.getElementById("loading");d.classList.add("loaded")};

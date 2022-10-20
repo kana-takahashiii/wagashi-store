@@ -157,6 +157,37 @@
 
 // }
 
+// ---------------------------------
+//-　OL　test
+#loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 4s;
+    background-color: #E6E2D7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.spinner {
+width: 100px;
+height: 100px;
+margin: 200px auto;
+background-color: #fff;
+border-radius: 100%;
+animation: ol-scaleout 1.0s infinite ease-in-out;
+}
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+// ---------------------------------
+
+
+
+
+
+
 
 
 // -----------
@@ -165,6 +196,7 @@
 #header {
     z-index: 0;
     position: relative;
+    
     .nav {
         ul {
             z-index: 1;
@@ -190,12 +222,6 @@
             img {
                 height: 100%;
                 object-fit: cover;
-            }
-            // テスト
-            .pattern1 img {
-                opacity: 0;
-                transform: translateX(40px);
-                transition: .5s;
             }
         }
         &__title {

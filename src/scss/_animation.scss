@@ -1,11 +1,10 @@
-
-
-
-// // contact anime-----SP版
-// @include mq(sp) {
-// @keyframes parapara-jmp {
-//     to {
-//         background-position: -(137px) 0 ; 
-//     }
-// }
-// }
+/* ローディングアニメーション */
+@keyframes ol-scaleout {
+    0% {
+        transform: scale(0);
+    } 100% {
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+    
