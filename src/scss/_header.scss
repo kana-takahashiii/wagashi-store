@@ -209,7 +209,6 @@ animation: ol-scaleout 1.0s infinite ease-in-out;
             column-gap: 25px;
         }
     }
-    
     .kv {
         position: relative;
         // height: 100vh;
@@ -222,6 +221,8 @@ animation: ol-scaleout 1.0s infinite ease-in-out;
             img {
                 height: 100%;
                 object-fit: cover;
+                animation: zoom 10s 1;
+                animation-fill-mode: forwards;
             }
         }
         &__title {

@@ -378,11 +378,17 @@
 // Window.onload = function() {
 //     const fade = document.querySelector('pattern1');
 //     fade.classList.add('show');
-//     console.log(fade);
-//     console.log(show);
 // }
 
 window.onload = function() {
     const spinner = document.getElementById('loading');
     spinner.classList.add('loaded');
 }
+
+
+// const targetEl = document.querySelector('#loading');
+//     targetEl.addEventListener('animationend',() => {
+//         const fade = document.querySelector('pattern1');
+//             fade.classList.add('show');
+//         console.log('hoge');
+//     });
