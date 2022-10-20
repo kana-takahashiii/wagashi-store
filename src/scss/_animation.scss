@@ -1,4 +1,4 @@
-/* ローディングアニメーション */
+/* OLアニメーション */
 @keyframes ol-scaleout {
     0% {
         transform: scale(0);
@@ -8,11 +8,12 @@
     }
 }
 
+/* kv img animetion*/
 @keyframes zoom {
     0% {
-       transform: scale(1);
+        transform: scale(1);
     }
     100% {
-       transform: scale(1.5);
+        transform: scale(1.5);
     }
- }
+}
