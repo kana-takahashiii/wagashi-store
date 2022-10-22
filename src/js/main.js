@@ -385,7 +385,6 @@ window.onload = function() {
     spinner.classList.add('loaded');
 }
 
-
 // const targetEl = document.querySelector('#loading');
 //     targetEl.addEventListener('animationend',() => {
 //         const fade = document.querySelector('pattern1');
