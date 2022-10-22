@@ -391,11 +391,11 @@ window.onload = function() {
 // kv-gsap
 gsap.fromTo('.js-fadeIN',{
         autoAlpha: 0,
-        x: 0
+        x: '10vw'
     },
     {
         autoAlpha: 1,
-        x: '-10vw',
+        x: 0,
         duration: 3,
         ease: "power4.out",
         scrollTrigger: {
