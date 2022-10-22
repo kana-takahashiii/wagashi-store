@@ -1,1 +1,1 @@
-window.onload=function(){const d=document.getElementById("loading");d.classList.add("loaded")};
+window.onload=function(){const o=document.getElementById("loading");o.classList.add("loaded")},gsap.fromTo(".js-fadeIN",{autoAlpha:0,x:0},{autoAlpha:1,x:"-10vw",duration:3,ease:"power4.out",scrollTrigger:{markers:!0,trigger:".js-fadeIN",start:"top"}});

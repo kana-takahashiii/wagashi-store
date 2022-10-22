@@ -380,14 +380,28 @@
 //     fade.classList.add('show');
 // }
 
+// オープニングローディング
 window.onload = function() {
     const spinner = document.getElementById('loading');
     spinner.classList.add('loaded');
 }
 
-// const targetEl = document.querySelector('#loading');
-//     targetEl.addEventListener('animationend',() => {
-//         const fade = document.querySelector('pattern1');
-//             fade.classList.add('show');
-//         console.log('hoge');
-//     });
+
+// gsap
+// kv-gsap
+gsap.fromTo('.js-fadeIN',{
+        autoAlpha: 0,
+        x: 0
+    },
+    {
+        autoAlpha: 1,
+        x: '-10vw',
+        duration: 3,
+        ease: "power4.out",
+        scrollTrigger: {
+            markers: true,
+            trigger: '.js-fadeIN',
+            start: 'top'
+        }
+    }
+);

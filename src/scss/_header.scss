@@ -239,13 +239,8 @@ animation: ol-scaleout 1.0s infinite ease-in-out;
                 margin: 0;
             }
         }
-        .fade-up {
-            animation-name:fade-up;
-            animation-duration:1s;
-            animation-fill-mode:forwards;
-            opacity:0;
-        }
-        
+
+
         &__online--left {
             justify-content: flex-start;
             position: absolute;
