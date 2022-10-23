@@ -5,7 +5,7 @@ include components/_header.pug
     //お知らせ
     .section 
         .section__first-wrap.js-fadeIN
-            h2.section__title お知らせ
+            h2.section__title.js-title お知らせ
             dl
                 dt 2021.01.01
                 dd 正月限定刻印どらやき
@@ -19,8 +19,8 @@ include components/_header.pug
                     //- dd 高橋さん家の水ようかん
             
         //新しい価値の想像
-        .section__second-wrap
-            h2.section__second-wrap__title 新しい価値の想像
+        .section__second-wrap.js-fadeIN
+            h2.section__second-wrap__title.js-title 新しい価値の想像
             .section__second-wrap__value
                 img(src="img/sec-img1.jpg", alt="菓子画像")
                 p 
@@ -30,7 +30,7 @@ include components/_header.pug
 
 
         //和と菓子の調和
-        .section__third-wrap
+        .section__third-wrap.js-fadeINleft
             h2.section__third-wrap__title 和と菓子の調和
             .section__third-wrap__harmony
                 img(src="img/sec-img2.jpg", alt="菓子画像")

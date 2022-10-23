@@ -220,7 +220,7 @@
 //     }
 //     // スムーススクロール記述 ↑↑
 //     smoothHomeAnchor();
-    
+
 //     //各セクションタイトルと要素がふわっと同時に浮き上がる　↓↓
 //     const items = document.querySelectorAll('.js-trigger');
 //     const titleFades = document.querySelectorAll('.js-span');
@@ -336,49 +336,42 @@
 //     } else if(works) {
 //         // スクロール×ふわっと現れる記述　↓↓
 //         const animes = gsap.utils.toArray('.js-demo');
-//         animes.forEach((anime) => {
-//             gsap.from(anime,
-//                 {
-//                     opacity: 0,
-//                     duration: 2,
-//                     y: "30%",
-//                     ease: "Power4.easeOut",
-//                     scrollTrigger: {
-//                         trigger:  anime,
-//                         start: 'top center'
-//                     }
-//                 }
-//                 );
-//             });
-//         //　スクロール×ふわっと現れる記述　↑↑
+        // animes.forEach((anime) => {
+        //     gsap.from(anime,
+        //         {
+        //             opacity: 0,
+        //             duration: 2,
+        //             y: "30%",
+        //             ease: "Power4.easeOut",
+        //             scrollTrigger: {
+        //                 trigger:  anime,
+        //                 start: 'top center'
+        //             }
+        //         }
+        //         );
+        //     });
+        // 　スクロール×ふわっと現れる記述　↑↑
 
 
-//         //img×スクロール×ふわっと現れる記述　↓↓
-//         gsap.from(".js-demo-img",{
-//             opacity: 0,
-//             y: "30%",
-//             stagger: 0.3,
-//             ease: "Power4.easeOut",
-//             duration: 2,
-//             scrollTrigger: {
-//                 trigger:  ".js-demo-img",
-//                 start: 'top center'
-//             }
-//         })
-//         //img×スクロール×ふわっと現れる記述　↑↑
+        // //img×スクロール×ふわっと現れる記述　↓↓
+        // gsap.from(".js-demo-img",{
+        //     opacity: 0,
+        //     y: "30%",
+        //     stagger: 0.3,
+        //     ease: "Power4.easeOut",
+        //     duration: 2,
+        //     scrollTrigger: {
+        //         trigger:  ".js-demo-img",
+        //         start: 'top center'
+        //     }
+        // })
+        //img×スクロール×ふわっと現れる記述　↑↑
 
 // };
 // // -----------------------------------
 // // ＊＊＊＊＊＊
 // // -----------------------------------
 
-// // -----------------------------------
-// //kv-anime
-// // -----------------------------------
-// Window.onload = function() {
-//     const fade = document.querySelector('pattern1');
-//     fade.classList.add('show');
-// }
 
 // オープニングローディング
 window.onload = function() {
@@ -389,19 +382,102 @@ window.onload = function() {
 
 // gsap
 // kv-gsap
-gsap.fromTo('.js-fadeIN',{
-        autoAlpha: 0,
-        x: '10vw'
-    },
-    {
-        autoAlpha: 1,
-        x: 0,
-        duration: 3,
-        ease: "power4.out",
-        scrollTrigger: {
-            markers: true,
-            trigger: '.js-fadeIN',
-            start: 'top'
+// gsap.fromTo('.js-fadeIN',{
+//         autoAlpha: 0,
+//         x: '10vw'
+//     },
+//     {
+//         autoAlpha: 1,
+//         x: 0,
+//         duration: 3,
+//         ease: "power4.out",
+//         scrollTrigger: {
+//             markers: true,
+//             trigger: '.js-fadeIN',
+//             start: 'top'
+//         }
+//     }
+// );
+
+// gsap.fromTo('.js-fadeIN2',{
+//     autoAlpha: 0,
+//     x: '10vw'
+// },
+// {
+//     autoAlpha: 1,
+//     x: 0,
+//     duration: 3,
+//     ease: "power4.out",
+//     scrollTrigger: {
+//         markers: true,
+//         trigger: '.js-fadeIN2',
+//         start: 'top'
+//     }
+// }
+// );
+
+
+
+
+
+// gsap.set(".js-fadeIN",{ autoAlpha: 0, x: '10vw' });
+
+// const items = document.querySelectorAll('.js-fadeIN');
+
+// for ( let i = 0; i < items.length; i++) {
+//     gsap.to(items[i],{
+//         autoAlpha: 1,
+//         x: 0,
+//         duration: 3,
+//         ease: "power4.out",
+//         scrollTrigger: {
+//             markers: true,
+//             trigger: items[i],
+//             start: 'top'
+//         }
+//     });
+// }
+
+
+
+
+const fadeIN = document.querySelectorAll('.js-fadeIN');
+const fadeINleft = document.querySelector('.js-fadeINleft');
+
+items.forEach((fadeIN) => {
+    if(fadeIN) {
+        gsap.fromTo('.js-fadeIN',{
+            autoAlpha: 0,
+            x: '10vw'
+        },
+        {
+            autoAlpha: 1,
+            x: 0,
+            duration: 3,
+            ease: "power4.out",
+            scrollTrigger: {
+                markers: true,
+                trigger: '.js-fadeIN',
+                start: 'top'
+            }
         }
+        );
     }
-);
+    else if (fadeINleft) {
+        gsap.fromTo('.js-fadeINleft',{
+            autoAlpha: 0,
+            x: '-10vw'
+        },
+        {
+            autoAlpha: 1,
+            x: 0,
+            duration: 3,
+            ease: "power4.out",
+            scrollTrigger: {
+                markers: true,
+                trigger: '.js-fadeINleft',
+                start: 'top'
+            }
+        })
+    }
+})
