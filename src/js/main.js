@@ -380,73 +380,24 @@ window.onload = function() {
 }
 
 
-// gsap
-// kv-gsap
-// gsap.fromTo('.js-fadeIN',{
-//         autoAlpha: 0,
-//         x: '10vw'
-//     },
-//     {
-//         autoAlpha: 1,
-//         x: 0,
-//         duration: 3,
-//         ease: "power4.out",
-//         scrollTrigger: {
-//             markers: true,
-//             trigger: '.js-fadeIN',
-//             start: 'top'
-//         }
-//     }
-// );
-
-// gsap.fromTo('.js-fadeIN2',{
-//     autoAlpha: 0,
-//     x: '10vw'
-// },
-// {
-//     autoAlpha: 1,
-//     x: 0,
-//     duration: 3,
-//     ease: "power4.out",
-//     scrollTrigger: {
-//         markers: true,
-//         trigger: '.js-fadeIN2',
-//         start: 'top'
-//     }
-// }
-// );
 
 
 
 
 
-// gsap.set(".js-fadeIN",{ autoAlpha: 0, x: '10vw' });
-
-// const items = document.querySelectorAll('.js-fadeIN');
-
-// for ( let i = 0; i < items.length; i++) {
-//     gsap.to(items[i],{
-//         autoAlpha: 1,
-//         x: 0,
-//         duration: 3,
-//         ease: "power4.out",
-//         scrollTrigger: {
-//             markers: true,
-//             trigger: items[i],
-//             start: 'top'
-//         }
-//     });
-// }
-
-
-
-
-const fadeIN = document.querySelectorAll('.js-fadeIN');
+//　セクションアニメーション
+const fadeINs = document.querySelectorAll('.js-fadeIN');
 const fadeINleft = document.querySelector('.js-fadeINleft');
+// fadeInアニメーションを都度まわす
+fadeINs.forEach((fadeIN) => {
+    // fadeIN（'.js-fadeIN’）に’.js-fadeINleft’というクラス名があるかないか
+    const flag = fadeIN.classList.contains('js-fadeINleft'); 
 
-items.forEach((fadeIN) => {
-    if(fadeIN) {
-        gsap.fromTo('.js-fadeIN',{
+    if(!flag) {
+    // もしクラス名（.js-fadeINleft）がなければ(=!)(本来はtrueを返すが'!'があることによりfalseを返す)、
+    // 以下を発火させる　（false)
+        console.log(flag);
+        gsap.fromTo( fadeIN, {
             autoAlpha: 0,
             x: '10vw'
         },
@@ -457,14 +408,15 @@ items.forEach((fadeIN) => {
             ease: "power4.out",
             scrollTrigger: {
                 markers: true,
-                trigger: '.js-fadeIN',
+                trigger: fadeIN,
                 start: 'top'
             }
-        }
-        );
+        })
     }
-    else if (fadeINleft) {
-        gsap.fromTo('.js-fadeINleft',{
+
+    //　あるなら(true)を返す↓
+    else {
+        gsap.fromTo( fadeIN, {
             autoAlpha: 0,
             x: '-10vw'
         },
@@ -475,9 +427,9 @@ items.forEach((fadeIN) => {
             ease: "power4.out",
             scrollTrigger: {
                 markers: true,
-                trigger: '.js-fadeINleft',
+                trigger: fadeIN,
                 start: 'top'
             }
         })
     }
-})
+});
