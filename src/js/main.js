@@ -383,20 +383,13 @@ window.onload = function() {
 
 
 
-
-
-//　セクションアニメーション
+//　セクションアニメーション記述
 const fadeINs = document.querySelectorAll('.js-fadeIN');
 const fadeINleft = document.querySelector('.js-fadeINleft');
 // fadeInアニメーションを都度まわす
 fadeINs.forEach((fadeIN) => {
-    // fadeIN（'.js-fadeIN’）に’.js-fadeINleft’というクラス名があるかないか
     const flag = fadeIN.classList.contains('js-fadeINleft'); 
-
     if(!flag) {
-    // もしクラス名（.js-fadeINleft）がなければ(=!)(本来はtrueを返すが'!'があることによりfalseを返す)、
-    // 以下を発火させる　（false)
-        console.log(flag);
         gsap.fromTo( fadeIN, {
             autoAlpha: 0,
             x: '10vw'
@@ -433,3 +426,5 @@ fadeINs.forEach((fadeIN) => {
         })
     }
 });
+
+
