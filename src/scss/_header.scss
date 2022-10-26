@@ -259,9 +259,10 @@ animation: ol-scaleout 1.0s infinite ease-in-out;
                 display: block;
                 border: solid 1px #ccc;
                 padding: 30px 18px;
-                // マウスホバーアニメーション
+                    // マウスホバーアニメーション
                 -webkit-transition: all 0.5s ease-out;
                 transition: all 0.5s ease-out;
+    
                 &:hover {
                     -webkit-transform: scale(1.2);
                     transform: scale(1.2);
