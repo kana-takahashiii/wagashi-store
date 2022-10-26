@@ -34,6 +34,14 @@
                             display: flex;
                             flex-direction: row-reverse;
                             column-gap: 25px;
+                            li {
+                                -webkit-transition: all 0.5s ease-out;
+                                transition: all 0.5s ease-out;   
+                                &:hover {
+                                    -webkit-transform: scale(1.2);
+                                    transform: scale(1.2);
+                                }
+                            }
                         }
                     }
                 }

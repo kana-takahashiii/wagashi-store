@@ -207,6 +207,15 @@ animation: ol-scaleout 1.0s infinite ease-in-out;
             right: 20vw;
             flex-direction: row-reverse;
             column-gap: 25px;
+            li {
+                // マウスホバーアニメーション
+                -webkit-transition: all 0.5s ease-out;
+                transition: all 0.5s ease-out;
+                &:hover {
+                    -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+                }
+            }
         }
     }
     .kv {
@@ -221,7 +230,6 @@ animation: ol-scaleout 1.0s infinite ease-in-out;
             img {
                 height: 100%;
                 object-fit: cover;
-                // kv　anime
                 animation: zoom 10s 1;
                 animation-fill-mode: forwards;
             }
@@ -251,12 +259,19 @@ animation: ol-scaleout 1.0s infinite ease-in-out;
                 display: block;
                 border: solid 1px #ccc;
                 padding: 30px 18px;
+                // マウスホバーアニメーション
+                -webkit-transition: all 0.5s ease-out;
+                transition: all 0.5s ease-out;
+                &:hover {
+                    -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+                }
+                                
             }
         }   
     
     }
 }
-
 
 
 
