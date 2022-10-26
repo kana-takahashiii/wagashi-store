@@ -245,9 +245,8 @@ animation: ol-scaleout 1.0s infinite ease-in-out;
             justify-content: flex-start;
             position: absolute;
             background: rgba(255,255,255,0.2);
-            left: 5%;
+            left: 5vw;
             bottom: 20px;
-            // top: 50%;
             a {
                 display: block;
                 border: solid 1px #ccc;
@@ -301,15 +300,33 @@ animation: ol-scaleout 1.0s infinite ease-in-out;
     #header {
         .nav {
             ul {
-                padding-right: 60px;
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: 25px;
+                top: 140px;
+                right: 0;
+                padding: 0;
+                left: 5vw;
             }
-        }
-        .kv {
-            &__title {
-                right: 5vw;
+                li {
+                    a {
+                        writing-mode: lr-tb;
+                    }
+                }
             }
-    
-        }
+            
+            .kv {
+                &__title {
+                    right: 0;
+                    left: 5vw;
+                    justify-content: flex-start;
+                    h1 {
+                        writing-mode: lr-tb;
+                    }
+                }
+                
+            }
     }
 }
+
 

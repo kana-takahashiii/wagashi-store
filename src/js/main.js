@@ -406,8 +406,6 @@ fadeINs.forEach((fadeIN) => {
             }
         })
     }
-
-    //　あるなら(true)を返す↓
     else {
         gsap.fromTo( fadeIN, {
             autoAlpha: 0,
