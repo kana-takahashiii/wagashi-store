@@ -18,15 +18,24 @@
         transform: scale(1.5);
     }
 }
-// kv-title fade-in
+
+
 
 @keyframes img-wrap-before {
+    0% {
+        transform: translateY(0%);
+    }
+
     100% {
         transform: translateY(100%);
     }
 }
 
-@keyframes img-wrap-after {
+@keyframes img-wrap-after{
+    0% {
+        transform: translateY(0%);
+    }
+
     100% {
         transform: translateY(-100%);
     }
